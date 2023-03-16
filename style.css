@@ -1,0 +1,489 @@
+*
+{
+background-color:  #8CC461;;
+
+size: fixed;
+
+}
+.container
+{ 
+  
+  width:100%;
+  height:100%;
+  }
+.scoreboard {
+  font-style: normal;
+  font-family: 'arial';
+    max-width: 720px;
+   height:150px;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    padding: 0 20px;
+    border: 3.5px solid white;
+    border-radius: 13px;
+display: flex;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .scoreboard{
+      padding: 0 10px;
+    }
+  }
+.scoretext
+{
+  font-family: 'arial';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+color:white;
+  letter-spacing: 0.05em;
+  height:80% ;
+  width:50%;
+  margin:auto;
+  padding:auto;
+
+}
+.yourscore
+{text-align: center;
+  height:80%;
+  margin:auto;
+  padding:auto;
+  background-color: aqua;
+  width:20%;
+background-color: white;
+border-radius: 9px;
+}
+.computerscore
+{text-align: center;
+  height:80%;
+  margin:auto;
+  padding:auto;
+  background-color: white;
+  border-radius: 9px;
+  width:20%;
+}
+.scorenumber
+{font-size:4rem;
+  margin:auto;
+  margin-top:0%;
+  padding:auto;
+  background-color: transparent;
+}
+.scoretitle
+{background-color: transparent;
+  height: auto;
+  width:auto;
+font-weight: bold;
+color: #656565;
+  margin-top:7%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.playarea
+{z-index: 1;
+  display:flex;
+ 
+  height:510px;
+  width:60%;
+  position: relative;
+  left:20%;
+  top:5%;
+  justify-content: center;
+}
+.choice-btn
+{z-index: 60;
+  height:150px;
+  width:150px;
+  border-radius:90px;
+
+  filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+  box-shadow: inset -1px 1px 11px rgba(0, 0, 0, 0.35) ;
+}
+.rock,.leftrock
+{position: relative;
+
+  bottom:15px;
+  left:-25px;
+  height:30px;
+  width:30px;
+ background-color: transparent;
+  padding: auto;
+  margin:auto;
+}
+.paper,.leftpaper
+{
+  background-color: transparent;
+}
+.scissor,.leftscissor
+{
+  background-color:transparent;
+}
+.tri{
+position:relative;
+top:150px;
+right:45px;
+
+
+}
+.line1
+{z-index: 1;
+  position: relative;
+  top:130px;
+  left:170px;
+}
+.line2
+{z-index: 1;
+  position:relative;
+  top:180px;
+  right:123px;
+  
+}
+.line3
+{z-index: 1;
+  position:relative;
+  top:180px;
+right:130px;
+}
+#crock
+{  border: 16px solid #0074B6;
+  position:absolute;
+  top:75px;
+  left:250px;
+  background-color: white;
+}
+#cscissor
+{ background-color: white;
+   border: 16px solid #BD00FF;
+position:absolute;
+left:550px;
+top:75px;
+
+}
+#cpaper
+
+{  border: 16px solid  #FFA943;
+  background-color: white;
+
+position: absolute;
+right:350px;
+top:310px;
+}
+.rules
+{
+  
+    position:fixed;
+    height:40px;
+    width:120px;
+    background-color:transparent;
+    right:2%;
+    bottom:20px;
+    float:left;
+    border:2px solid white;
+    border-radius: 10px;
+    font-family: 'arial';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 25px;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+
+.rulebox
+{display: none;
+ 
+justify-content: center;
+  height:48vh;
+  width:38vh;
+ z-index: 15;
+ 
+  position:fixed;
+padding-right:15px;
+  right:50px;
+  bottom:100px;
+  background-color: #004429;
+border: 7px solid #FFFFFF;
+border-radius: 13px;
+color: white;
+font-family: 'arial';
+font-style: normal;
+}
+ul {
+  list-style: none; /* Remove default bullets */
+  background-color: transparent;
+}
+
+ul li::before {
+  content: "\25AA";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgb(248, 234, 39); /* Change the color */
+  font-size: 1.3rem; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+margin-top:.3em;
+
+
+}
+li{
+  background-color: transparent;
+
+}
+
+.rulelist{
+  position: relative;
+background-color: transparent;
+  top:8px;
+
+}
+.header1
+{
+font-size: 40px;
+font-family: 'arial';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 34px;
+position:relative;
+top:10px;
+left:53px;
+background-color: transparent;
+color: #FFFFFF;
+
+
+}
+.closebutton
+{
+  position: relative ;
+  left:270px;
+  bottom:380px;
+  margin:auto;
+  padding:auto;
+  background-color: red;
+  height:60px;
+  width:60px;
+border: 5px solid #FFFFFF;
+border-radius: 45px;
+background-image: url(images/X.svg) ;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
+.playafter
+{
+display: none;
+z-index: 10;
+height:65vh;
+width:110vh;
+padding:auto;
+margin:0 auto;
+background-color: transparent;
+position: relative;
+bottom:-15px;
+z-index:10;
+} 
+.player{
+  margin: auto;
+ 
+  padding:auto;
+}
+#leftplayer{z-index: 10;
+  position:relative;
+  right:32%;
+  height:100%;
+  width:35%;
+  background-color:transparent;
+  }
+#indicator{z-index: 10;
+  position:relative;
+  bottom:100%;
+  left:1%;
+    height:100%;
+    width:30%;
+    background-color: red;
+    }
+#rightplayer{z-index: 10;
+ position:relative;
+ bottom:100%;
+ left:32%;
+ 
+      height:100%;
+      width:35%;
+      background-color:transparent;
+      }
+
+      .nextarea
+      {display: none;
+        position:fixed;
+        height:10vh;
+        right:1%;
+        bottom:1%;
+        width:50vh;
+        background-color:transparent;
+        
+        z-index:15;
+      }
+     #nextrule
+     {
+position: fixed;
+left:76%;     }
+#nextbtn
+{
+  position: fixed;
+  right:5%;
+  
+}
+.indtexth2
+{position:relative;
+ 
+z-index: 16;
+font-family: 'arial';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 33px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+.indtexth1
+{z-index: 25;
+  font-family: 'arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 53px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  z-index: 18;
+  color: #FFFFFF;
+  position: relative;
+top:20px;
+  left:0%;
+}
+.playertext
+{z-index: 9;
+  position: relative;
+  bottom:165%;
+  width:30%;
+  left:35%;
+  background-color: transparent;
+}
+ .playagain
+{z-index: 20;
+    height:45px;
+    width:190px;
+    background-color: white;
+    border-radius: 9px;
+    border-color:white;
+    position: relative;
+    top:48%;
+    left:12%;
+    font-family: 'arial';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 18px;
+letter-spacing: 0.1em;
+
+color: #6B6B6B;
+} 
+
+.leftcircle,.rightcircle
+{z-index: 40;
+
+  height:250px;
+  width:250px;
+position:relative;
+margin:auto;
+padding:auto;
+top:30%;
+right:7%;
+background-color:transparent;
+
+}
+.c01
+{
+position:relative;
+bottom:73%;
+background-color: transparent;
+}
+.c02
+{
+  position: relative;
+  background-color: transparent;
+  bottom:185%;
+  right:10%;
+}
+
+.c03
+{position:relative;
+  background-color:transparent;
+bottom:340%;
+right:45%;
+
+}
+.rightcircle
+{
+  left:7%;
+}
+.leftrock,.leftscissor,.leftpaper{
+  z-index:90;
+  height:160px;
+  width:160px;
+  display:none;
+  justify-content: center;
+  justify-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 150px;
+  border:15px  solid #0074B6;
+  padding:auto;
+  margin:auto;
+  position:relative;
+  top:15%;
+  left:0%;
+  
+  filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
+  box-shadow: inset -1px 1px 11px rgba(0, 0, 0, 0.35) ;
+}
+.leftscissor
+{
+  border-color:  #BD00FF;
+}
+
+
+.leftpaper
+{
+  border-color:#FFA943;
+}
+
+.limages,.rimages,.rimagesscissor
+{
+  background-color:transparent;
+  position: relative;
+  top:25%;
+  left:27%;
+  
+}
+.rimagesscissor
+{
+  top:30%;
+left:35%;
+}
+

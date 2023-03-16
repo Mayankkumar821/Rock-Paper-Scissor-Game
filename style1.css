@@ -1,0 +1,258 @@
+*
+{
+    background-color:  #8CC461;;;
+}
+.container2
+{position: relative;
+top:35px;    
+height:700px;
+width:70%;
+background-color: aqua;
+margin:auto;
+padding:auto;
+
+}
+.images
+{
+
+
+    height:50%;
+    width:100%;
+    margin:auto;
+    padding:auto;
+  
+}
+.text
+{   
+    display:flex;
+     height:25%;
+    width:100%;
+    margin:auto;
+    padding:auto;
+
+
+}
+.btn
+{    height:25%;
+    width:100%;
+    margin:auto;
+    padding:auto;
+
+
+}
+.cup
+{ margin:auto;
+    padding:auto;
+    background-color: transparent;
+    position:relative;
+    left:40%;
+   
+   top:150px;
+
+}
+.star1
+{ margin:auto;
+    padding:auto;
+    background-color: transparent;
+    position:relative;
+    left:18px;
+    top:66px;
+}
+.star3
+{ margin:auto;
+    padding:auto;
+    background-color: transparent;
+    position: relative;
+    bottom:130px;
+    left:35px;
+}
+.star9
+{ margin:auto;
+    padding:auto;
+    background-color: transparent;
+    position: relative;
+    top:-45px;
+    right:45px;
+}
+.star5
+{position: relative;
+    left:50px;
+
+    bottom:80px;
+}
+.star4
+{
+    position: relative;
+    left:-90px;
+    top:145px;
+}
+.star6{
+    position:relative;
+    left:120px;
+    top:125px;
+}
+.star2
+{
+    position: relative;
+    bottom:60px;
+    right:50px;
+}
+.star8
+{
+    position: relative;
+    bottom:35px;
+    right:38px;
+}
+.heading
+{
+    font-family: 'arial';
+font-style: normal;
+font-weight: 600;
+font-size: 70px;
+line-height: 107px;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+position: relative;
+bottom:50px;
+left:300px;
+background-color: transparent;
+}
+.headingsupport
+{   font-family: 'arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 107px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    
+    color: #FFFFFF;
+    position: relative;
+    top:56px;
+    left:-220px;
+    background-color: transparent;
+margin:auto;
+padding:auto;
+}
+.playagain
+{
+    height:40px;
+    width:150px;
+    background-color: white;
+    border-radius: 9px;
+    border-color:white;
+    position: relative;
+    top:55px;
+    left:43%;
+    font-family: 'arial';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 18px;
+letter-spacing: 0.1em;
+
+color: #6B6B6B;
+}
+.rules
+{
+  
+    position:fixed;
+    height:40px;
+    width:120px;
+    background-color: transparent;
+    right:5%;
+    bottom:20px;
+    border:2px solid white;
+    border-radius: 10px;
+    font-family: 'arial';
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 25px;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+
+
+.rulebox
+{display: none;
+ 
+justify-content: center;
+  height:48vh;
+  width:38vh;
+ z-index: 15;
+ 
+  position:fixed;
+padding-right:15px;
+  right:50px;
+  bottom:100px;
+  background-color: #004429;
+border: 7px solid #FFFFFF;
+border-radius: 13px;
+color: white;
+font-family: 'arial';
+font-style: normal;
+}
+ul {
+  list-style: none; 
+  background-color: transparent;
+}
+
+ul li::before {
+  content: "\25AA";  
+  color: rgb(248, 234, 39); 
+  font-size: 1.3rem;
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+margin-top:.3em;
+
+
+}
+li{
+  background-color: transparent;
+
+}
+
+.rulelist{
+  position: relative;
+background-color: transparent;
+  top:8px;
+
+}
+.header1
+{
+font-size: 40px;
+font-family: 'arial';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 34px;
+position:relative;
+top:10px;
+left:53px;
+background-color: transparent;
+color: #FFFFFF;
+
+
+}
+.closebutton
+{
+  position: relative ;
+  left:270px;
+  bottom:380px;
+  margin:auto;
+  padding:auto;
+  background-color: red;
+  height:60px;
+  width:60px;
+border: 5px solid #FFFFFF;
+border-radius: 45px;
+background-image: url(images/X.svg) ;
+background-repeat: no-repeat;
+background-position: center;
+
+}

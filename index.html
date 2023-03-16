@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+      <title>ROCK PAPER SCISSOR GAME</title>
+</head>
+<body>
+        <div class="container" id="parent-div">
+          <div class="scoreboard">
+<div class="scoretext"> ROCK <br> PAPER <br> SCISSORS</div>
+
+<div class="computerscore">  
+    
+    
+ <div class="scoretitle"> COMPUTER <br>SCORE</div>
+<div class="scorenumber" id="cscore">0</div>
+</div>
+
+<div class="yourscore">    <div class="scoretitle">    YOUR <br>SCORE</div>
+<div class="scorenumber" id="pscore">0</div>    </div>
+    </div>
+
+<div class="playarea" id="old-div">
+    <button class="choice-btn" id="crock"  data-choice="rock" onclick="play('rock')">
+    <div class="rock"> <img src="images/rock.svg" alt="rock" style="background-color: transparent;" > </div>
+</button>
+<button class="choice-btn" id="cscissor"  data-choice="scissor" onclick="play('scissor')">
+    <div class="scissor"> <img src="images/scissor.png" alt="scissor" style="background-color: transparent;"> </div>
+</button>
+<button class="choice-btn" id="cpaper" data-choice="paper" onclick="play('paper')">
+    <div class="paper"> <img src="images/paper.svg" alt="paper" style="background-color: transparent;"> </div>
+</button>
+
+<img src="images/Line 1.svg"  height="30px" width="300px" class="line1" id="line01">
+<img src="images/Line 3.svg"  height="200px" width="150px" class="line3" id="line02">
+<img src="images/Line 2.svg"  height="200px" width="150px" class="line2" id="line03">
+</div>
+
+ <div class="playafter" id="new-div">
+<div class="player" id="leftplayer"> 
+
+<div class="leftcircle" id="lcircle" > 
+          <div class="leftrock" id="lrock"> <img src="images/rock.svg" alt="rock"  class="limages" > </div>
+   <div class="leftpaper" id="lpaper"> <img src="images/paper.svg" alt="paper" class="limages"> </div>
+   <div class="leftscissor"  id="lscissor"> <img src="images/scissor.png" alt="scissor"  class="rimagesscissor"> </div> 
+
+    <img src="images/eclipse1.svg" class="c01" id="b1"> <img src="images/eclipse2.svg" class="c02" id="b2"> <img src="images/eclipse3.svg" class="c03" id="b3">
+  </div>
+
+</div>
+<div class="player" id="rightplayer">
+    
+
+    <div class="rightcircle"  id="rcircle"> 
+        <div class="leftrock" id="rrock"> <img src="images/rock.svg" alt="rock" class="rimages" > </div>
+        <div class="leftpaper" id="rpaper"> <img src="images/paper.svg" alt="paper" class="rimages"> </div>
+   <div class="leftscissor" id="rscissor"> <img src="images/scissor.png" alt="scissor" class="rimagesscissor" > </div> 
+
+        <img src="images/eclipse1.svg" class="c01" id="c1"> <img src="images/eclipse2.svg" class="c02" id="c2"> <img src="images/eclipse3.svg" class="c03" id="c3">
+    </div></div>   
+<div class="playertext" ><h1 class="indtexth1"  id="t5">YOU WIN </h1>
+<h2 class="indtexth2" id="t6"> AGAINST PC</h2>
+<button class="playagain" onclick="showplayarea()">PLAY AGAIN</button>
+</div>
+
+</div>
+ 
+<button class="rules" onclick="rules()">RULES  </button> 
+<div class="rulebox"> <header class="header1"> Game Rules</header>
+
+<ul class="rulelist">
+<li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+<li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.</li>
+<li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time </li>
+<li>If both players lay down the same hand, each player lays down another hand </li>
+</ul>
+
+<button class="closebutton" onclick="closebtn()"></button></div>
+<div class="nextarea">   
+    <button class="rules" id="nextrule" onclick="rules()" >  RULES</button>  
+    
+<button class="rules" id="nextbtn" onclick="nextbtn()">  NEXT</button> </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
