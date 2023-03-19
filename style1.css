@@ -5,39 +5,58 @@
 .container2
 {position: relative;
 top:35px;    
-height:700px;
-width:70%;
-background-color: aqua;
-margin:auto;
-padding:auto;
+height:690px;
+width:98%;
+background-color:transparent;
+margin:5px;
+padding:5px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 
 }
 .images
 {
-
-
-    height:50%;
+background-color:transparent;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+top:80px;
+    height:500px;
     width:100%;
-    margin:auto;
-    padding:auto;
+    margin:10px;
+    padding:20px;
+  
   
 }
 .text
 {   
     display:flex;
-     height:25%;
+    flex-direction: column;
+    justify-content: center;
+    background-color:transparent;
+     height:350px;
     width:100%;
-    margin:auto;
-    padding:auto;
+    margin:2px;
+    padding:2px;
+    position: relative;
+    bottom:140px;
+  
 
 
 }
 .btn
-{    height:25%;
-    width:100%;
+{    height:50px;
+    width:80px;
     margin:auto;
     padding:auto;
-
+position: relative;
+background-color: transparent;
+bottom:160px;
+right:25px;
 
 }
 .cup
@@ -45,9 +64,9 @@ padding:auto;
     padding:auto;
     background-color: transparent;
     position:relative;
-    left:40%;
+  
    
-   top:150px;
+   top:220px;
 
 }
 .star1
@@ -55,83 +74,94 @@ padding:auto;
     padding:auto;
     background-color: transparent;
     position:relative;
-    left:18px;
-    top:66px;
+    right:210px;
+    top:37px;
 }
 .star3
 { margin:auto;
     padding:auto;
     background-color: transparent;
     position: relative;
-    bottom:130px;
-    left:35px;
+  right:145px;
+  bottom:185px;
 }
 .star9
 { margin:auto;
     padding:auto;
     background-color: transparent;
     position: relative;
-    top:-45px;
-    right:45px;
+   right:170px;
+   bottom:165px;
 }
 .star5
 {position: relative;
-    left:50px;
-
-    bottom:80px;
+    background-color: transparent;
+right:150px;
+bottom:15px;
+    margin:auto;
+    padding:auto;
+   
 }
 .star4
-{
+{margin:auto;
+    padding:auto;
     position: relative;
-    left:-90px;
-    top:145px;
+    background-color: transparent;
+    right:30px;
+    bottom:270px;
+    
 }
+
 .star6{
     position:relative;
-    left:120px;
-    top:125px;
+    bottom:175px;
+    left:170px;
+    background-color: transparent;
 }
 .star2
 {
     position: relative;
-    bottom:60px;
-    right:50px;
+    background-color: transparent;
+    bottom:455px;
+    left:105px;
 }
 .star8
 {
     position: relative;
-    bottom:35px;
-    right:38px;
+    background-color: transparent;
+    margin:auto;
+    padding: auto;
+    bottom:460px;
+    left:190px;
 }
 .heading
 {
     font-family: 'arial';
 font-style: normal;
-font-weight: 600;
-font-size: 70px;
-line-height: 107px;
+font-weight: 580;
+font-size: 90px;
+line-height: 7px;
 text-align: center;
 letter-spacing: 0.1em;
 
 color: #FFFFFF;
 position: relative;
-bottom:50px;
-left:300px;
+
+
 background-color: transparent;
 }
 .headingsupport
 {   font-family: 'arial';
     font-style: normal;
-    font-weight: 400;
-    font-size: 35px;
+    font-weight: 550;
+    font-size: 41px;
     line-height: 107px;
     text-align: center;
     letter-spacing: 0.1em;
     
     color: #FFFFFF;
     position: relative;
-    top:56px;
-    left:-220px;
+    bottom:65px;
     background-color: transparent;
 margin:auto;
 padding:auto;
@@ -144,8 +174,7 @@ padding:auto;
     border-radius: 9px;
     border-color:white;
     position: relative;
-    top:55px;
-    left:43%;
+   
     font-family: 'arial';
 font-style: normal;
 font-weight: 600;
@@ -177,38 +206,68 @@ color: #FFFFFF;
 }
 
 
+
+
 .rulebox
-{display: none;
+{display:none;
  
-justify-content: center;
-  height:48vh;
-  width:38vh;
+  height:360px;
+  width:305px;
  z-index: 15;
  
   position:fixed;
-padding-right:15px;
-  right:50px;
-  bottom:100px;
+padding-right:10px;
+  right:90px;
+  bottom:90px;
   background-color: #004429;
 border: 7px solid #FFFFFF;
 border-radius: 13px;
 color: white;
 font-family: 'arial';
 font-style: normal;
+padding-left:5px;
+padding-top:10px;
+
 }
+
+.cbutton
+{padding:1px;
+  margin:1px;
+  height: 80px;
+  width:70px;
+  position: relative;
+  bottom: 397px;
+  left:290px;
+  background-color: transparent;
+}
+.closebutton
+{  
+  background-color: red;
+  height:60px;
+  width:60px;
+border: 5px solid #FFFFFF;
+border-radius: 45px;
+background-image: url(images/X.svg) ;
+background-repeat: no-repeat;
+background-position: center;
+
+}
+
 ul {
-  list-style: none; 
+  list-style: none; /* Remove default bullets */
   background-color: transparent;
 }
 
 ul li::before {
   content: "\25AA";  
   color: rgb(248, 234, 39); 
-  font-size: 1.3rem;
-  display: inline-block; 
+  position: relative;
+  top:18px;
+  font-size: 2rem; 
+  display: inline-block;
   width: 1em; 
   margin-left: -1em; 
-margin-top:.3em;
+margin-top:0.1em;
 
 
 }
@@ -220,7 +279,7 @@ li{
 .rulelist{
   position: relative;
 background-color: transparent;
-  top:8px;
+  top:0px;
 
 }
 .header1
@@ -228,31 +287,14 @@ background-color: transparent;
 font-size: 40px;
 font-family: 'arial';
 font-style: normal;
-font-weight: 500;
+font-weight: 550;
 font-size: 32px;
 line-height: 34px;
 position:relative;
 top:10px;
-left:53px;
+left:65px;
 background-color: transparent;
 color: #FFFFFF;
 
-
-}
-.closebutton
-{
-  position: relative ;
-  left:270px;
-  bottom:380px;
-  margin:auto;
-  padding:auto;
-  background-color: red;
-  height:60px;
-  width:60px;
-border: 5px solid #FFFFFF;
-border-radius: 45px;
-background-image: url(images/X.svg) ;
-background-repeat: no-repeat;
-background-position: center;
 
 }
