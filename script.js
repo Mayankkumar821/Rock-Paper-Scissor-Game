@@ -42,12 +42,12 @@ function play(playerChoice)
    showresult.style.display="block";
  hideplayarea.style.display="none";
 line01.style.position="absolute";
-line01.style.left="350px";
+line01.style.top="140px";
 
 line02.style.position="absolute"
-line02.style.left="310px";
+line02.style.left="330px";
 line03.style.position="absolute";
-line03.style.right="265px";
+line03.style.left="470px";
 
 leftcircles.style.display="none";
 rightcircles.style.display="none";
@@ -57,8 +57,8 @@ document.getElementById('t6').innerHTML='AGAINST PC';
   if (playerChoice === computerChoice) {
     document.getElementById('t5').innerHTML='TIE UP';
     document.getElementById('t6').innerHTML=' ';
- t5.style.position="relative";
-  t5.style.top="-10px";
+//  t5.style.position="relative";
+//   t5.style.top="-10px";
 
   rightcircles.style.display="block";
   leftcircles.style.display="block";
